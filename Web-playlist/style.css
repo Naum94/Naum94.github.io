@@ -36,7 +36,7 @@ footer { position: fixed; bottom:0; width: 100%; padding-top: 5px; padding-botto
     }
 
     .player{
-        width:50%;
+        width:100%;
         height:auto;
         padding-top: 0;
     }
