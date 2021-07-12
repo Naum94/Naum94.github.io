@@ -30,7 +30,7 @@ footer { position: fixed; bottom:0; width: 100%; padding-top: 5px; padding-botto
 
 /* Media Query for mobile*/
 
-@media only screen and (min-width: 240px ) and (max-width: 768px){
+@media only screen and (min-width: 240px) and (max-width: 1024px){
 
     ol {
         border:0; border-top: 3px solid rgb(61, 209, 16); border-bottom: 3px solid rgb(61, 209, 16);
