@@ -8,9 +8,25 @@ const audio = document.getElementById("song");
 
 // Songs
 const songs = [
-    'BFG Devision','BFG Labs','TOTTFIY','Crusade','Down to the Ground',
-    'Adapt or Die','Departure to Destruction','Brain Freeze','Crank',
-    'Omnissiah','Time will not heal','Eldvag','Boomslang','Quarantine','Time'
+    'Crusade',
+    'Down to the Ground',
+    'The Third',
+    'BFG Devision',
+    'Hell on Earth',
+    'Meathook',
+    'The Super Gore Nest',
+    'TOTTFIY',
+    'Conflagration',
+    'Dune',
+    'Xenomorph',
+    'Bring It!',
+    'Hell March 3',
+    'Rock And Awe',
+    'Aftershock',
+    'Boomslang',
+    'Prevail',
+    'Quarantine',
+    'Time'
 ];
 
 let songIndex = 0; // The First song
