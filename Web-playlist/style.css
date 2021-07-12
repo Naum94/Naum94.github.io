@@ -4,23 +4,23 @@ body { padding: 0; margin: 0; font-family: 'Roboto', sans-serif;
 
 ol { 
     background-color: rgb(20,20,20); margin-left:auto; margin-right:auto; width: 500px;
-    padding: 10px 0 10px 45px; border: 3px solid rgb(61, 209, 16);
+    padding: 10px 0 10px 40px; border: 3px solid rgb(61, 209, 16);
     border-radius: 10px;
    }
-footer { position: fixed; bottom:0; width: 100%; padding: 5px; 
+footer { position: fixed; bottom:0; width: 100%; padding-top: 5px; padding-bottom:5px; 
     text-align: center; color: rgb(61, 209, 16); background-color: black; font-weight: bold;
     }
 .web-header { color: white; background-color: black; margin: 0; text-align: center; 
     padding: 10px; border-bottom: 5px solid rgb(61, 209, 16);
 }
 .player {  
-    display: block; width: 200px; height: 50px; background-color: rgb(20,20,20); 
-    text-align: center; margin: 10px auto 10px auto; padding-top: 20px;
+    display: block; width: 25%; height: auto; background-color: rgb(20,20,20); 
+    text-align: center; margin: 10px auto 10px auto;
     border-radius: 10px;
 }
 .action-btn { border:0; background-color: transparent;color: white; 
-    cursor: pointer; font-size: 20px; padding: 5px;}
-.action-btn-play { font-size: 26px; padding: 0 20px 0 20px; }
+    cursor: pointer; font-size: 24px; padding: 10px 0 10px 0;}
+.action-btn-play {padding-right: 15%; padding-left: 15%;}
 .action-btn:focus { outline: 0; }
 .action-btn:hover { color: rgb(61, 209, 16); }
 .container {margin-bottom: 80px;}
@@ -36,10 +36,11 @@ footer { position: fixed; bottom:0; width: 100%; padding: 5px;
     }
 
     .player{
-        width:100%;
-        height:200px;
+        width:50%;
+        height:auto;
+        padding-top: 0;
     }
 
-    .action-btn { font-size: 10vh; }
-    .action-btn-play { padding: 0 8vh 0 8vh; }
+    .action-btn { font-size: 48px; }
+    .action-btn-play { padding: 0 15% 0 15%; }
 }
