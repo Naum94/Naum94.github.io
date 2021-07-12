@@ -1,5 +1,6 @@
 body { padding: 0; margin: 0; font-family: 'Roboto', sans-serif;
        background-color: rgb(40,40,40); color: white;
+       width: 100%;
      }
 
 ol { 
@@ -7,6 +8,7 @@ ol {
     padding: 10px 0 10px 40px; border: 3px solid rgb(61, 209, 16);
     border-radius: 10px;
    }
+
 footer { position: fixed; bottom:0; width: 100%; padding-top: 5px; padding-bottom:5px; 
     text-align: center; color: rgb(61, 209, 16); background-color: black; font-weight: bold;
     }
@@ -23,7 +25,7 @@ footer { position: fixed; bottom:0; width: 100%; padding-top: 5px; padding-botto
 .action-btn-play {padding-right: 15%; padding-left: 15%;}
 .action-btn:focus { outline: 0; }
 .action-btn:hover { color: rgb(61, 209, 16); }
-.container {margin-bottom: 80px;}
+.container {margin-bottom: 80px; width:100%;}
 .playing-now { color: rgb(61, 209, 16); font-weight:bold;}
 
 /* Media Query for mobile*/
@@ -32,7 +34,8 @@ footer { position: fixed; bottom:0; width: 100%; padding-top: 5px; padding-botto
 
     ol {
         border:0; border-top: 3px solid rgb(61, 209, 16); border-bottom: 3px solid rgb(61, 209, 16);
-        border-radius: 0; width: 100%; padding-left: 7%;
+        border-radius: 0; width: 100%;
+        padding-left: 0; text-align: center; list-style-type: none;
     }
 
     .player{
@@ -44,4 +47,5 @@ footer { position: fixed; bottom:0; width: 100%; padding-top: 5px; padding-botto
 
     .action-btn { font-size: 48px; }
     .action-btn-play { padding: 0 15% 0 15%; }
+    .container {width: 100%; margin: 0 auto 80px auto;}
 }
