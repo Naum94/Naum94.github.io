@@ -4,7 +4,7 @@ body { padding: 0; margin: 0; font-family: 'Roboto', sans-serif;
 
 ol { 
     background-color: rgb(20,20,20); margin-left:auto; margin-right:auto; width: 500px;
-    padding: 10px 0 10px 30px; border: 3px solid rgb(61, 209, 16);
+    padding: 10px 0 10px 45px; border: 3px solid rgb(61, 209, 16);
     border-radius: 10px;
    }
 footer { position: fixed; bottom:0; width: 100%; padding: 5px; 
@@ -14,8 +14,8 @@ footer { position: fixed; bottom:0; width: 100%; padding: 5px;
     padding: 10px; border-bottom: 5px solid rgb(61, 209, 16);
 }
 .player {  
-    display: block; width: 200px; background-color: rgb(20,20,20); 
-    text-align: center; margin: 10px auto 10px auto;
+    display: block; width: 200px; height: 50px; background-color: rgb(20,20,20); 
+    text-align: center; margin: 10px auto 10px auto; padding-top: 20px;
     border-radius: 10px;
 }
 .action-btn { border:0; background-color: transparent;color: white; 
@@ -25,3 +25,21 @@ footer { position: fixed; bottom:0; width: 100%; padding: 5px;
 .action-btn:hover { color: rgb(61, 209, 16); }
 .container {margin-bottom: 80px;}
 .playing-now { color: rgb(61, 209, 16); font-weight:bold;}
+
+/* Media Query for mobile*/
+
+@media screen and (max-device-width: 640px){
+    
+    ol {
+        border:0; border-top: 3px solid rgb(61, 209, 16); border-bottom: 3px solid rgb(61, 209, 16);
+        border-radius: 0; width: 100%; padding-left: 7%;
+    }
+
+    .player{
+        width:100%;
+        height:200px;
+    }
+
+    .action-btn { font-size: 10vh; }
+    .action-btn-play { padding: 0 8vh 0 8vh; }
+}
