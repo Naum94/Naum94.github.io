@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Naum Ivanovski CV</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+
+            /*Global*/
+            @font-face { font-family: Roboto; src: url("Roboto/Roboto-Regular.ttf"); }
+            body { font-size: 16px; font-family: Roboto, sans-serif; margin: 0; padding: 0; 
+                background-color: #FAFAFA; }
+            .container {display: flex; flex-wrap: wrap; width: 100%; margin-bottom: 30px; }
+            footer{bottom: 0; width:100%; text-align: center; color: white; 
+                background-color: black; padding: 10px; position: fixed; font-size: 20px;}
+            footer i {color:white; }
+            footer a:hover .fa { color:#21BC0E; }
+            hr {width: 90%; margin:auto;}
+
+            /*Personal section*/
+             img {width: 100%; }
+            .personal {width: 30%; background-color: white; margin: 20px; color: #757575;
+            box-shadow: 0 0 20px 3px #999; }
+            .personal p {margin: 5% ;}
+            .personal i {margin: 0 5% ; color: black;}
+            .personal ul li {margin: 0 5%;}
+            .personal .cv-pdf {text-decoration: none; color: red; cursor: pointer; font-weight: bold;}
+            .certs {width: 50%; padding-left:5%;}
+            .header {font-size: 20px; color: #21BC0E;}
+            .header i {color: #21BC0E;}
+
+            /*Experience section*/
+            .expirience {width: 62%; background-color: white; margin: 20px; margin-left: 0px; padding: 15px; 
+                color: #757575; box-shadow: 0 0 20px 3px #999;}
+            .expirience .title {font-size: 30px;}
+            .expirience p {padding-left: 5%; color:black;}
+            .expirience i {padding-left: 3%; padding-right: 3%; color:black;}
+            .expirience h3 {padding-left: 5%;}
+            .expirience .date {color: #21BC0E;}
+            .expirience .date i {color: #21BC0E;}
+            .expirience ul {list-style: none; color: black;}
+            .expirience ul li::before {content:"\00BB"; padding-right: 5px;}
+            .expirience ul li {padding-left: 5%;}
+            
+            /* Container for skill bars */
+            .skill-container { font-size: 12px; width: 90%; background-color: #ddd; 
+                margin:auto; border-radius: 25px;}
+            .skills { text-align: center; padding-top: 1px; padding-bottom: 1px; 
+                color: white; font-weight: bold; border-radius: 25px;}
+            .linux {width: 90%; background-color: #21BC0E;}
+            .network {width: 80%; background-color: #21BC0E;}
+            .trouble {width: 100%; background-color: #21BC0E;}
+            .programing {width: 80%; background-color: #21BC0E;}
+            .security {width: 66%; background-color: #21BC0E;}
+            .azure {width: 40%; background-color: #21BC0E;}
+            .aws {width: 30%; background-color: #21BC0E;}
+
+            @media only screen and (max-width : 1280px) {
+                .personal {width: 100%;}
+                .expirience {width: 100%; margin-left: 20px;} 
+            }
+
+        </style>      
+    </head>
+
+    <body lang="en">
+        <div class="container">
+
+            <div class="personal">
+                <img src="Me.webp" width=100% \>
+                <p><i class="fa fa-id-card-o"></i>Naum Ivanovski</p>
+                <p><i class="fa fa-briefcase"></i>Support Engineer</p>
+                <hr/>
+                <p class="header"><i class="fa fa-star"></i>Skills</p>
+                <p><i class="fa fa-linux"></i>Linux Administration</p> 
+                <p><div class="skill-container"><div class="skills linux">90%</div></div></p>
+                <p><i class="fa fa-wifi"></i>Networking</p> 
+                <p><div class="skill-container"><div class="skills network">80%</div></div></p>
+                <p><i class="fa fa-life-ring"></i>Troubleshooting</p> 
+                <p><div class="skill-container"><div class="skills trouble">100%</div></div></p>
+                <p><i class="fa fa-code"></i>Scripting</p> 
+                <p><div class="skill-container"><div class="skills programing">80%</div></div></p>
+                <p><i class="fa fa-shield"></i>Security</p> 
+                <p><div class="skill-container"><div class="skills security">66%</div></div></p>
+                <p><i class="fa fa-cloud"></i>Azure Cloud</p> 
+                <p><div class="skill-container"><div class="skills azure">40%</div></div></p>
+                <p><i class="fa fa-cloud"></i>AWS Cloud</p> 
+                <p><div class="skill-container"><div class="skills aws">30%</div></div></p>
+                <hr/>
+                <p class="header"><i class="fa fa-language"></i>Languages</p>
+                    <ul>
+                        <li>Macedonian</li>
+                        <li>English</li>
+                    </ul>
+                <hr/>
+                <p class="header"><i class="fa fa-certificate"></i>Certificates / Learning</p>
+                <p>AWS Cloud Practitioner</p>
+                <a href="certs/AWS-Cloud-Practitioner.jpg"><img class="certs" src="certs/AWS-Cloud-Practitioner.jpg" /></a>
+                <p>Microsoft Azure Fundamentals</p>
+                <a href="certs/AZ-900.jpg"><img class="certs" src="certs/AZ-900.jpg" /></a>
+                <p>Microsoft Security, Compliance, and Identity Fundamentals</p>
+                <a href="certs/SC-900.jpg"><img class="certs" src="certs/SC-900.jpg" /></a>
+                <p>ITIL 4 Foundation</p>
+                <a href="certs/ITIL4.jpg"><img class="certs" src="certs/ITIL4.jpg" /></a>
+                <p>CCNA Training</p>
+                <a href="certs/CCNA.jpg"><img class="certs" src="certs/CCNA.jpg" /></a>
+                <p>Linux System Administrator</p>
+                <a href="certs/LinuxSA.jpg"><img class="certs" src="certs/LinuxSA.jpg" /></a>
+                <p>Redhat Enterprise Linux 8 Essential Training</p>
+                <a href="certs/RHEL-8-Essential.jpg"><img class="certs" src="certs/RHEL-8-Essential.jpg" /></a>
+                <p>Linux Security and Hardening Essential Training</p>
+                <a href="certs/LinuxSec.jpg"><img class="certs" src="certs/LinuxSec.jpg" /></a>
+                <p>Learning SSL/TLS</p>
+                <a href="certs/SSL-TLS.jpg"><img class="certs" src="certs/SSL-TLS.jpg" /></a>
+                <p>Wireshark Essential Training</p>
+                <a href="certs/Wireshark.jpg"><img class="certs" src="certs/Wireshark.jpg" /></a>
+            </div>
+
+            <div class="expirience">
+               <p class="title"><i class="fa fa-briefcase"></i>Work Experience</p>
+               <hr/>
+               <h3>Cloud Operations Support Engineer - Endava DOOEL Skopje</h3>
+               <p class="date"><i class="fa fa-calendar"></i>January 2025 - Current</p>
+               <hr/>
+               <h3>Linux Support Engineer - Endava DOOEL Skopje</h3>
+               <p class="date"><i class="fa fa-calendar"></i>September 2022 - January 2025</p>
+               <ul>
+                    <li>Upgrading/Patching of Linux based systems on-prem and in cloud. (RHEL, CentOS, Oracle Linux, Amazon Linux).</li>
+                    <li>Configuration of Linux based services. (Webservers, DNS, SNMP, Let's Encrypt, Squid, keepalived)</li>
+                    <li>Management and renewal of TLS/SSL certificates.</li>
+                    <li>Management of SFTP solution for a client.</li>
+                    <li>Ticket and Incident resolution within defined SLA.</li>
+                    <li>Handover and training of new team members.</li>
+                    <li>Creating and maintanance of documentation.</li>
+                </ul>
+               <hr/>
+               <h3>Senior Specialist for voice and real-time communication services - A1 Macedonia </h3>
+               <p class="date"><i class="fa fa-calendar"></i>August 2019 - September 2022</p>
+               <p class="text">Telecommunication operator in Macedonia providing mobile, fixed, internet,
+                 OTT services to end users. Company part of TAG - Telecom Austria Group.</p>
+                <ul>
+                    <li>Automating housekeeping on Linux servers.</li>
+                    <li>Automating backups.</li>
+                    <li>Managing and configuring services on Linux servers. (SLES, Debian, CentOS, RHEL)</li>
+                    <li>Responsible for operations and maintanance of the fallowing systems:
+                        <ul>
+                            <li>USSD Gateway.</li>
+                            <li>Roaming Steering.</li>
+                            <li>ACME Session Border Controllers.</li>
+                            <li>SMS systems.</li>
+                            <li>MMS systems.</li>
+                            <li>VAS (Value Added Services) systems, developed in-house using Kannel 
+                                (an open-source WAP gateway).</li>
+                            <li>VAS applications running on TIBCO ESB.</li>
+                        </ul>
+                    </li>
+                    <li>Problem troubleshooting and traffic analisys.</li>
+                    <li>Help customers integrate with existing platforms.</li>
+                    <li>Monitoring of processes and alarming. (using Monit, Grafana and ELK stack)</li>
+                    <li>Documetation of systems.</li>
+                    <li>Project Management.</li>
+                    <li>Close cooperation with company departments (CRM, Billing, Marketing, 
+                        IT Bussiness Solutions, IT Infrastructure, IT Networking, IT Security).</li>
+                    <li>Maintaining close cooperation with company vendors.</li>
+                    <li>Incident management and resolution.</li>
+                    <li>Developing web-based in-house tools for Contact Centar 
+                        (using PHP, Bash, HTML5, CSS3, Bootstrap4, SQL)</li>
+                </ul>
+
+                <hr/>
+
+               <h3>Junior Value Added Services Engineer - one.VIP DOOEL Skopje</h3>
+               <p class="date"><i class="fa fa-calendar"></i>March 2018 - August 2019</p>
+               <ul>
+                    <li>Provisioning of new services for 3rd party providers.</li>
+                    <li>Development of in-house solutions.</li>
+                    <li>Providing reports for service utilization.</li>
+               </ul>
+
+               <hr/>
+
+               <p class="title"><i class="fa fa-graduation-cap"></i>Education</p>
+
+               <h3>Saints Cyril and Methodius University in Skopje</h3>
+               <p class="date"><i class="fa fa-calendar"></i>2013 - 2017</p>
+               <p>Faculty of Electrical Engineering and Information Technologies</p>
+               <p><b>Bachelor of Science:</b> Electrical Engineering and Information Technologies</p>
+
+               <hr/>
+
+               <h3>High School "SETU Mihajlo Pupin" in Skopje</h3>
+               <p class="date"><i class="fa fa-calendar"></i>2009 - 2013</p>
+
+            </div>
+
+        </div>
+
+        <footer class="foot">
+            Contact me on
+            <a href="https://www.linkedin.com/in/naum-ivanovski-560b95231"><i class="fa fa-linkedin-square"></i></a>
+        </footer>
+
+    </body>
+</html>
