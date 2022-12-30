@@ -13,13 +13,10 @@
             body { font-size: 16px; font-family: Roboto, sans-serif; margin: 0; padding: 0; 
                 background-color: #FAFAFA; }
             .container {display: flex; flex-wrap: wrap; width: 100%; margin-bottom: 30px; }
-            a:hover {color: red; font-weight: bold; cursor: pointer;}
-            a:hover i {color:red; font-weight: bold;}
             footer{bottom: 0; width:100%; text-align: center; color: white; 
-                background-color: black; padding: 10px; position: fixed; font-size: 18px;}
-            footer i {color: white;}
-            footer a:hover .fa-linkedin-square {color: blue;}
-            footer a:hover .fa-instagram {color: magenta;}
+                background-color: black; padding: 10px; position: fixed; font-size: 20px;}
+            footer i {color:white; }
+            footer a:hover .fa { color:#21BC0E; }
             hr {width: 90%; margin:auto;}
 
             /*Personal section*/
@@ -29,8 +26,7 @@
             .personal p {margin: 5% ;}
             .personal i {margin: 0 5% ; color: black;}
             .personal ul li {margin: 0 5%;}
-            .personal a {text-decoration: none; color: #757575;}
-            .personal a:hover {color: red; }
+            .personal .cv-pdf {text-decoration: none; color: red; cursor: pointer; font-weight: bold;}
             .certs {width: 50%; padding-left:5%;}
             .header {font-size: 20px; color: #21BC0E;}
             .header i {color: #21BC0E;}
@@ -57,11 +53,12 @@
             .network {width: 80%; background-color: #21BC0E;}
             .trouble {width: 100%; background-color: #21BC0E;}
             .programing {width: 80%; background-color: #21BC0E;}
+            .security {width: 66%; background-color: #21BC0E;}
             .cloud {width: 25%; background-color: #21BC0E;}
 
             @media only screen and (max-width : 1280px) {
                 .personal {width: 100%;}
-                .expirience {width: 100%; margin-left: 20px;}
+                .expirience {width: 100%; margin-left: 20px;} 
             }
 
         </style>      
@@ -71,13 +68,13 @@
         <div class="container">
 
             <div class="personal">
-                <img src="Me.jpg" width=100% fetchpriority="high" \>
+                <img src="Me.webp" width=100% \>
                 <p><i class="fa fa-id-card-o"></i>Naum Ivanovski</p>
                 <p><i class="fa fa-briefcase"></i>Support Engineer</p>
                 <p><i class="fa fa-home"></i>Skopje</p>
                 <p><i class="fa fa-envelope"></i>naum.ivanovski1@gmail.com</p>
                 <p><i class="fa fa-phone"></i>+389 70 259 029</p>
-                <p><a href="Naum Ivanovski CV.pdf" download><i class="fa fa-file-pdf-o"></i>Download CV</a></p>
+                <p><a href="Naum Ivanovski CV.pdf" class="cv-pdf" download><i class="fa fa-file-pdf-o cv-pdf"></i>Download CV</a></p>
                 <hr/>
                 <p class="header"><i class="fa fa-star"></i>Skills</p>
                 <p><i class="fa fa-linux"></i>Linux Administration</p> 
@@ -88,6 +85,8 @@
                 <p><div class="skill-container"><div class="skills trouble">100%</div></div></p>
                 <p><i class="fa fa-code"></i>Scripting</p> 
                 <p><div class="skill-container"><div class="skills programing">80%</div></div></p>
+                <p><i class="fa fa-shield"></i>Security</p> 
+                <p><div class="skill-container"><div class="skills security">66%</div></div></p>
                 <p><i class="fa fa-cloud"></i>Azure Cloud</p> 
                 <p><div class="skill-container"><div class="skills cloud">25%</div></div></p>
                 <hr/>
@@ -102,8 +101,12 @@
                 <a href="certs/AZ-900.jpg"><img class="certs" src="certs/AZ-900.jpg" /></a>
                 <p>Linux System Administrator</p>
                 <a href="certs/LinuxSA.jpg"><img class="certs" src="certs/LinuxSA.jpg" /></a>
+                <p>Redhat Enterprise Linux 8 Essential Training</p>
+                <a href="certs/RHEL-8-Essential.jpg"><img class="certs" src="certs/RHEL-8-Essential.jpg" /></a>
                 <p>Linux Security and Hardening Essential Training</p>
                 <a href="certs/LinuxSec.jpg"><img class="certs" src="certs/LinuxSec.jpg" /></a>
+                <p>Learning SSL/TLS</p>
+                <a href="certs/SSL-TLS.jpg"><img class="certs" src="certs/SSL-TLS.jpg" /></a>
                 <p>Wireshark Essential Training</p>
                 <a href="certs/Wireshark.jpg"><img class="certs" src="certs/Wireshark.jpg" /></a>
             </div>
@@ -175,10 +178,10 @@
 
         </div>
 
-        <footer>
+        <footer class="foot">
             Contact me on
-            <a class="linkedin" href="https://www.linkedin.com/in/naum-ivanovski-560b95231"><i class="fa fa-linkedin-square"></i></a>
-            <a class="instagram" href="https://www.instagram.com/naum.ivanovski1/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naum-ivanovski-560b95231"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://www.instagram.com/naum.ivanovski1/?hl=en"><i class="fa fa-instagram"></i></a>
         </footer>
 
     </body>
