@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neo Cheatsheet</title>
+        <meta charset="utf-8">
+        <style>
+            body { font-size: 12px; font-family:sans-serif; margin: 0; padding: 0; background-color: #111;}
+            code {
+                background-color: #222; border: 5px; 
+                padding: 0px 5px 0px 5px; color:#00fff2;}
+            h1 {text-align: center; margin-top: 0;}
+            .main {margin: auto;}
+            .container {
+                width: 90%; margin: auto; padding-left: 10px;
+                color: white; background-color: #333;
+                }
+        </style>
+    </head>
+    <body lang="en">
+        <div class="container">
+    <h1>Cheatsheet</h1>
+    <h3>BASH CUSTOMIZATIONS</h3>
+    <pre>
+    Colors:
+            
+    <code>RED="\[\e[1;31m\]";</code>
+    <code>GREEN="\[\e[1;32m\]";</code>
+    <code>YELLOW="\[\e[1;33m\]";</code>
+    <code>BLUE="\[\e[1;34m\]";</code>
+    <code>PURPLE="\[\e[1;35m\]";</code> 
+    <code>AQUA="\[\e[1;36m\]";</code>
+    <code>WHITE="\[\e[1;37m\]";</code>
+    <code>RESET="\[\e[0m\]";</code> 
+                 
+    Prompt example: <code>PS1="${GREEN}\u${WHITE}@${RED}\h ${WHITE}in ${AQUA}\w ${WHITE}> ${RESET}";</code>
+                 
+    Aliases example:
+               
+    <code>alias grep='grep --color=auto'</code>
+    <code>alias nano='nano -ic'</code>
+    </pre>
+
+    <h3>OPENSSL TRICKS</h3>
+    <pre>
+    Get all SSL certificates from site:
+
+    <code>echo | openssl s_client -showcerts -connect www.example.com:443 | awk '/BEGIN CERT/,/END CERT/ {print $0}' > ca-bundle.pem</code> 
+    <code>echo | openssl s_client -showcerts -servername www.example.com -connect www.example.com:443 | awk '/BEGIN CERT/,/END CERT/ {print $0}' > ca-bundle.pem</code>
+
+    Read SSL certificate: <code>openssl x509 -noout -text -in certificate.cer</code>
+
+    Extract certificate chain from PFX: <code>openssl pkcs12 -in certificate.pfx -nokeys -out ca-bundle.pem -nodes</code>
+    Extract private key from PFX: <code>openssl pkcs12 -in certificate.pfx -nocerts -out ca-bundle.pem -nodes</code> 
+    Remove private key passphrase: <code>openssl rsa -in private_w_pf.key -out private.key</code>
+    </pre>
+
+    <h3>CURL TRICKS</h3>
+    <pre>
+    Test HTTPS: <code>curl -vI --cacert ca-bundle.pem "https://www.example.com"</code>
+    Check certificate validity: <code>curl -kvI https://example.com 2>&1 | awk '/Server certificate/,/issuer/ { print }'</code>
+    </pre>
+
+    <h3>SCREEN TRICKS</h3>
+    <pre>
+        Create named screen: <code>screen -S screen_name</code>
+        Join named screen: <code>screen -x screen_name</code>
+        Detach from screen: <code>screen -d</code>
+        Reattach to screen: <code>screen -r screen_name</code>
+
+        Shortcuts:
+
+        - Detach from screen: <code>Ctrl + a + Ctrl + d</code>
+        - Split vertically: <code>Ctrl + a + |</code>
+        - Split horizontally: <code>Ctrl + a + S</code>
+        - Change window: <code>Ctrl + a + Tab</code>
+        - Start new screen session in window: <code>Ctrl + a + Ctrl + c</code>
+        - Exit all screen windows: <code>Ctrl + a + \</code>
+    </pre>
+        </div>
+    </body>
+</html>
